@@ -1,17 +1,6 @@
-var net = require('net');
-
-var server = net.createServer(function(socket){
-  socket.on('data', function(socket){
-    socket.write('hello');
-  });
-
-  socket.on('end', function(socket){
-    console.log('connection break');
-  });
-
-  socket.write('welcome');
-});
-
-server.listen('/tmp/echo.sock', function(){
-  console.log('tcp bind');
-})
+var http = require('http');
+http.createServer(function(req, res){
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('hello world\n');
+}).listen(1337, '127.0.0.1');
+console.log('http server');
