@@ -1,6 +1,8 @@
-var http = require('http');
-http.createServer(function(req, res){
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('hello world\n');
-}).listen(1337, '127.0.0.1');
-console.log('http server');
+var koa = require('koa')
+var app = koa()
+
+app.use(function *(){
+  this.body = 'Hello World'
+});
+
+app.listen(3000);
