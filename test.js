@@ -1,8 +1,2 @@
-var koa = require('koa')
-var app = koa()
-
-app.use(function *(){
-  this.body = 'Hello World'
-});
-
-app.listen(3000);
+let [ , , third] = ["foo", "bar", "baz"];
+console.log(third);
