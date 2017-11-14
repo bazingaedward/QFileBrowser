@@ -1,2 +1,3 @@
-let [ , , third] = ["foo", "bar", "baz"];
-console.log(third);
+let {foo, bar} = { foo: "aaa", bar: "bbb"}
+
+console.log(foo);
