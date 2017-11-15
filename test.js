@@ -1,3 +1,10 @@
-let {foo, bar} = { foo: "aaa", bar: "bbb"}
+function* helloWorldGenerator() {
+  yield 'hello';
+  yield 'world';
+  return 'ending';
+}
 
-console.log(foo);
+var hw = helloWorldGenerator();
+console.log(hw.next());
+console.log(hw.next());
+console.log(hw.next());
