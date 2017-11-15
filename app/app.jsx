@@ -1,14 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="container">
-      <h1>Hello React!</h1>
-    </div>
-  );
+class Button extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  static defaultProps = {
+    color: 'blue',
+    text: 'Confirm',
+  };
+
+  render() {
+    const { color, text } = this.props;
+
+    return (
+      <button className={`btn btn-${color}`}>
+        <em>{text}</em>
+      </button>
+    );
+  }
 }
-const hello = "test";
-const app = document.createElement('div');
-document.body.appendChild(app);
-ReactDOM.render(<App />, app);
