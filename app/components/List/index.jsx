@@ -1,9 +1,9 @@
 /*
- * @file component Item
-*/
+ * @file component List
+ */
 
 import React, { PropTypes } from 'react';
-import ListItem from '../ListItem'
+import ListItem from '../ListItem';
 
 const propTypes = {
   items: PropTypes.array.isRequired,
@@ -16,8 +16,8 @@ function List({ items, onSelect }) {
       <ListItem
         item={item}
         key={item.id}
-        onClick={ () => onSelect(item.id) }
-        />
+        onClick={() => onSelect(item.id)}
+      />
     )
   );
 
