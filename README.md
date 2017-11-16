@@ -26,7 +26,7 @@ A **Free** file browser javascript UI Library based on [ReactJS](https://reactjs
 
 ## License  
 
-Apache 2.0
+[Apache 2.0](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
 
 
 
