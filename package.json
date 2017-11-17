@@ -9,12 +9,20 @@
   },
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server --hot"
+    "dev": "webpack-dev-server --hot",
+    "start": "dora --plugins webpack"
   },
   "devDependencies": {
+    "antd": "^2.13.10",
+    "atool-build": "^1.0.2",
+    "babel-plugin-import": "^1.6.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.7",
+    "dora": "^0.4.5",
+    "dora-plugin-proxy": "^0.8.5",
+    "dora-plugin-webpack": "^1.0.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
     "html-webpack-plugin": "^2.30.1",
@@ -22,5 +30,8 @@
     "karma-firefox-launcher": "^1.0.1",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1"
+  },
+  "entry": {
+    "index": "./app/app.jsx"
   }
 }
