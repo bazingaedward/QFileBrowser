@@ -1,10 +1,2 @@
-function* helloWorldGenerator() {
-  yield 'hello';
-  yield 'world';
-  return 'ending';
-}
-
-var hw = helloWorldGenerator();
-console.log(hw.next());
-console.log(hw.next());
-console.log(hw.next());
+a = [1,2,3];
+console.log([...a, 4])

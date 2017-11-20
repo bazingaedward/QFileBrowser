@@ -27,7 +27,7 @@ class TreeBlock extends React.Component {
       }
     }).map((item) => {
         return {
-          key: item.name,
+          key: [...this.props.paths, item.name].join('/'),
           title: item.name
         }
     });
