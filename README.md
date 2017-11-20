@@ -7,16 +7,15 @@ A **Free** file browser javascript UI Library based on [ReactJS](https://reactjs
 
 ---
 
-## Example Screenshot
-![]
+## Demos
+![screenshot](https://github.com/bazingaedward/QFileBrowser/blob/master/test/screenshot.png)
 
 ## React Components
 
-* TreeBlock:
-* 2
-* 3
-
-## Demos
+* TreeBlock: File tree views component based on [Tree](https://ant.design/components/tree-cn/)
+* MenuBlock: Custom buttons for file Searching
+* FileTableBlock: current file table list views component based on [Table](https://ant.design/components/table-cn/)
+* BreadcrumbBlock: file paths based on [Breadcrumb](https://ant.design/components/breadcrumb-cn/)
 
 
 ## Quick Start
