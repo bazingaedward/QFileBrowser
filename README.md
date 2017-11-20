@@ -17,13 +17,17 @@ A **Free** file browser javascript UI Library based on [ReactJS](https://reactjs
 * FileTableBlock: current file table list views component based on [Table](https://ant.design/components/table-cn/)
 * BreadcrumbBlock: file paths based on [Breadcrumb](https://ant.design/components/breadcrumb-cn/)
 
+## Todo List
+* Add Unit Test based on mocha+chai
+* file CRUD operations
+* Ajax, RESTful, PHP server API support
 
 ## Quick Start
 
 
-## FAQ
+## Version History
+* version 1.0 2017.11.20
 
-## Next
 
 
 ## License  
