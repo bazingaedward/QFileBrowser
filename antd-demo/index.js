@@ -8,18 +8,21 @@ import TreeBlock from './components/TreeBlock'
 
 const DATA = [
   {
+    key: "0",
     name: "hello",
     isDir: true,
     size: 0,
     date: new Date().toLocaleTimeString(),
   },
   {
+    key: "1",
     name: "world",
     isDir: true,
     size: 0,
     date: new Date().toLocaleTimeString(),
   },
   {
+    key: "2",
     name: "test.ppt",
     isDir: false,
     size: 128,
@@ -29,18 +32,21 @@ const DATA = [
 
 const hello = [
   {
+    key: "00",
     name: "hello1.txt",
     isDir: false,
     size: 12800,
     date: new Date().toLocaleTimeString(),
   },
   {
+    key: "01",
     name: "hello2.xlsx",
     isDir: false,
     size: 16000,
     date: new Date().toLocaleTimeString(),
   },
   {
+    key: "02",
     name: "test2.ppt",
     isDir: false,
     size: 128,
@@ -62,9 +68,9 @@ class QFileBrowser extends React.Component {
     };
   }
 
-  getData(path='/'){
+  getData(url=''){
     "get custom directory list data asynethically"
-    if(path == '/')
+    if(url == '')
       return DATA;
     else {
       return hello;
@@ -72,13 +78,14 @@ class QFileBrowser extends React.Component {
   }
 
   componentWillMount(){
-    this.state.data = this.getData('/');
+    this.state.data = this.getData();
   }
 
-  onPathChanged = (path) => {
+  onPathChanged = (url) => {
+    // console.log(url);
     this.setState({
-      paths: path,
-      data: this.getData(path)
+      paths: url.split('/'),
+      data: this.getData(url)
     })
 
   }

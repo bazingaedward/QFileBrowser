@@ -27,12 +27,11 @@ class TreeBlock extends React.Component {
       }
     }).map((item) => {
         return {
-          key: "/" + item.name,
+          key: item.name,
           title: item.name
         }
     });
     return [root];
-
   }
 
   componentWillMount(){
@@ -54,7 +53,8 @@ class TreeBlock extends React.Component {
   }
 
   onSelect = (key) => {
-    this.props.onSelect(key);
+    if(key.length < 2)
+      this.props.onSelect(key[0]);
   }
 
   render(){
