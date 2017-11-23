@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.14",
+    "redux": "^3.7.2"
   },
   "scripts": {
     "build": "webpack",
@@ -19,6 +21,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
     "css-loader": "^0.28.7",
     "dora": "^0.4.5",
     "dora-plugin-proxy": "^0.8.5",
@@ -26,8 +29,10 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
     "html-webpack-plugin": "^2.30.1",
+    "ignore-styles": "^5.0.1",
     "karma": "^1.7.1",
     "karma-firefox-launcher": "^1.0.1",
+    "mocha": "^4.0.1",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1"
   },
