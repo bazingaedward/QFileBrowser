@@ -4,6 +4,7 @@ import {Row, Col} from 'antd';
 import MenuBlock from './components/MenuBlock'
 import BreadcrumbBlock from './components/BreadcrumbBlock'
 import TreeBlock from './components/TreeBlock'
+import { createStore } from 'redux'
 
 
 const DATA = [
@@ -66,6 +67,14 @@ class QFileBrowser extends React.Component {
       data: []
 
     };
+    this.store = createStore(function (state={}, action) {
+      switch(action.type){
+        case 'addTodo':
+          console.log('hello');
+        default:
+
+      }
+    });
   }
 
   getData(url=''){

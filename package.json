@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gulp": "^3.9.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
@@ -28,6 +29,8 @@
     "dora-plugin-webpack": "^1.0.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^3.0.0",
     "html-webpack-plugin": "^2.30.1",
     "ignore-styles": "^5.0.1",
     "karma": "^1.7.1",

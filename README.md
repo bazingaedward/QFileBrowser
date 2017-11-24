@@ -18,6 +18,7 @@ A **Free** file browser javascript UI Library based on [ReactJS](https://reactjs
 * BreadcrumbBlock: file paths based on [Breadcrumb](https://ant.design/components/breadcrumb-cn/)
 
 ## Todo List
+* React-Redux
 * Add Unit Test based on mocha+chai
 * file CRUD operations
 * Ajax, RESTful, PHP server API support
