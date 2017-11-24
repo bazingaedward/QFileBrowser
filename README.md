@@ -19,15 +19,24 @@ A **Free** file browser javascript UI Library based on [ReactJS](https://reactjs
 
 
 
-## Quick Start
+## Install
 
 ```
 git clone git@github.com:bazingaedward/QFileBrowser.git
+
 cd QFileBrowser
+
 npm install
 ```
 
 ## Quick Start
+ - eslint test
+ ```
+ npm run eslint
+ ```
+
+ - run Test Case
+ 
 
 ## Version History
 * version 1.0 2017.11.20
