@@ -6,7 +6,7 @@ var ROOT = path.resolve(__dirname);
 var BUILD_PATH = path.resolve(ROOT, 'build');
 module.exports= {
   entry: {
-    app: path.resolve(ROOT, 'src/index.js')
+    app: path.resolve(ROOT, 'src/index.jsx')
   },
   output: {
     path: BUILD_PATH,
@@ -28,7 +28,7 @@ module.exports= {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         loaders: [
           'babel-loader'
         ],

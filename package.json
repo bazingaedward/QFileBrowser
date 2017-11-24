@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^2.13.10",
     "gulp": "^3.9.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -13,11 +14,12 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server --hot",
-    "start": "dora --plugins webpack"
+    "start": "dora --plugins webpack",
+    "eslint": "eslint src/index.jsx"
   },
   "devDependencies": {
-    "antd": "^2.13.10",
     "atool-build": "^1.0.2",
+    "babel-eslint": "^8.0.2",
     "babel-plugin-import": "^1.6.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -28,8 +30,11 @@
     "dora": "^0.4.5",
     "dora-plugin-proxy": "^0.8.5",
     "dora-plugin-webpack": "^1.0.0",
+    "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
     "gulp-jshint": "^2.0.4",
     "gulp-uglify": "^3.0.0",
     "html-webpack-plugin": "^2.30.1",
