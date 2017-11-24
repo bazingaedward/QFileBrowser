@@ -95,7 +95,7 @@ class QFileBrowser extends React.Component {
     this.setState({
       paths: url.split('/'),
       data: this.getData(url)
-    })
+    });
 
   }
 

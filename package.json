@@ -19,6 +19,7 @@
     "antd": "^2.13.10",
     "atool-build": "^1.0.2",
     "babel-plugin-import": "^1.6.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
@@ -38,8 +39,5 @@
     "mocha": "^4.0.1",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1"
-  },
-  "entry": {
-    "index": "./app/app.jsx"
   }
 }

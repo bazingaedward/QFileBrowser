@@ -1,10 +1,10 @@
 {
   "presets": [
-    "latest",
     "react"
   ],
   "plugins":[
-    ["transform-runtime"],
+    ["transform-class-properties"],
+    "transform-runtime",
     ["import", { libraryName: "antd", style: "css" }]
   ]
 }

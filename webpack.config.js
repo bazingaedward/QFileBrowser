@@ -2,12 +2,11 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var ROOT_PATH = path.resolve(__dirname);
-var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
-var APP_PATH = path.resolve(ROOT_PATH, 'app');
+var ROOT = path.resolve(__dirname);
+var BUILD_PATH = path.resolve(ROOT, 'build');
 module.exports= {
   entry: {
-    app: path.resolve(APP_PATH, 'app.jsx')
+    app: path.resolve(ROOT, 'src/index.js')
   },
   output: {
     path: BUILD_PATH,
@@ -29,17 +28,21 @@ module.exports= {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$/,
         loaders: [
           'babel-loader'
         ],
-        include: APP_PATH
+        include: [
+          path.resolve(ROOT, "src"),
+        ]
+      },
+      {
+        test: /\.css$/,
+        loaders: [
+          'style-loader',
+          'css-loader'
+        ]
       }
     ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'My first react app'
-    })
-  ]
+  }
 }
