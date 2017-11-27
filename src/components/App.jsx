@@ -83,7 +83,6 @@ class QFileBrowser extends React.Component {
     });
   }
 
-
   render() {
     return (
       <div>
