@@ -95,7 +95,9 @@ class QFileBrowser extends React.Component {
           data={this.state.data}
           onSelect={path => this.onPathChanged(path)}
         />
-      </div>''
+      </div>
     );
   }
 }
+
+export default QFileBrowser;

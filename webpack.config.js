@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var ROOT = path.resolve(__dirname);
 var BUILD_PATH = path.resolve(ROOT, 'build');
-module.exports= {
+module.exports = {
   entry: {
     app: path.resolve(ROOT, 'src/index.jsx')
   },

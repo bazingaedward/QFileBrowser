@@ -12,6 +12,5 @@ export const refreshDirectory = ( path ) => {
   return {
     type: REFRESH_DIRECTORY,
     paths: paths,
-
   }
 }
