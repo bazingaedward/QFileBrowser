@@ -59,6 +59,7 @@ class QFileBrowser extends React.Component {
     }
     return hello;
   }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -69,10 +70,12 @@ class QFileBrowser extends React.Component {
       paths: [],
       data: [],
     };
+
   }
 
+
   componentWillMount() {
-    this.state.data = this.getData();
+    this.state.data = QFileBrowser.getData();
   }
 
   onPathChanged = (url) => {

@@ -12,7 +12,7 @@
     "redux": "^3.7.2"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -w",
     "dev": "webpack-dev-server --hot",
     "start": "dora --plugins webpack",
     "eslint": "eslint src/index.jsx",
