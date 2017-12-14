@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import MenuBlock from './components/MenuBlock';
-import BreadcrumbBlock from './components/BreadcrumbBlock';
-import TreeBlock from './components/TreeBlock';
+import MenuBlock from './MenuBlock';
+import BreadcrumbBlock from './BreadcrumbBlock';
+import TreeBlock from './TreeBlock';
 
 const DATA = [
   {

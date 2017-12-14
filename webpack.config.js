@@ -13,8 +13,8 @@ module.exports = {
     filename: 'bundle.js'
   },
 
-  // //enable dev source map
-  // devtool: 'eval-source-map',
+  //enable dev source map
+  devtool: 'eval-source-map',
   // //enable dev server
   // devServer: {
   //   historyApiFallback: true,
@@ -22,9 +22,9 @@ module.exports = {
   //   inline: true,
   //   progress: true
   // },
-  // resolve: {
-  //   extensions: ['*', '.js', '.jsx'],
-  // },
+  resolve: {
+        extensions: ['*','.js','.jsx']
+  },
   module: {
     rules: [
       {
