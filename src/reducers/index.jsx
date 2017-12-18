@@ -1,17 +1,37 @@
-import * as actions from '../actions';
+import { CHANGE_DIRECTORY } from '../actions';
 
 const initialState = {
-  path: '/',
-  tree: []
+  paths: [],
+  tree: {},
+  data: [
+    {
+      key: '0',
+      name: 'hello',
+      isDir: true,
+      size: 0,
+      date: new Date().toLocaleTimeString(),
+    },
+    {
+      key: '1',
+      name: 'world',
+      isDir: true,
+      size: 0,
+      date: new Date().toLocaleTimeString(),
+    },
+    {
+      key: '2',
+      name: 'test.ppt',
+      isDir: false,
+      size: 128,
+      date: new Date().toLocaleTimeString(),
+    }]
 }
 
 function appReducer(state = initialState, action) {
   switch(action.type){
-    case actions.REFRESH_DIRECTORY:
-      console.log(actions.REFRESH_DIRECTORY);
+    case CHANGE_DIRECTORY:
       return Object.assign({}, state, {
-        update: true,
-        path: action.path
+        paths: action.paths
       })
       break;
     default:

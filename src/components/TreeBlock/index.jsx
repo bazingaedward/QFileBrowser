@@ -2,8 +2,8 @@
  * @file component Item
 */
 import React from 'react';
-import { Icon, Table, Tree, Col, Row} from 'antd';
-import FileTableBlock from '../../components/FileTableBlock'
+import { Icon, Tree } from 'antd';
+
 const TreeNode = Tree.TreeNode;
 
 class TreeBlock extends React.Component {
@@ -65,15 +65,10 @@ class TreeBlock extends React.Component {
       onSelect: this.onSelect
     }
     return (
-      <Row>
-        <Col span={4}>
-          <Tree {...options} >
-            {this.renderTreeNodes(this.state.structure)}
-          </Tree>
-        </Col>
-        <Col span={20}><FileTableBlock data={this.props.data}/></Col>
-      </Row>
-    );
+      <Tree {...options} >
+        {this.renderTreeNodes(this.state.structure)}
+      </Tree>
+    )
   }
 
 }
