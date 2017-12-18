@@ -10,8 +10,7 @@ class TreeBlock extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      structure: []
-    };
+    }
   }
 
   preHandleData = (data) => {
@@ -31,11 +30,11 @@ class TreeBlock extends React.Component {
           title: item.name
         }
     });
-    return [root];
+    return [root]
   }
 
   componentWillMount(){
-    this.state.structure = this.preHandleData(this.props.data);
+    this.state.structure = this.preHandleData(this.props.data)
   }
 
   renderTreeNodes = (data) => {

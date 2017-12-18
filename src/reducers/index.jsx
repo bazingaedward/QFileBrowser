@@ -2,7 +2,6 @@ import { CHANGE_DIRECTORY } from '../actions';
 
 const initialState = {
   paths: [],
-  tree: {},
   data: [
     {
       key: '0',

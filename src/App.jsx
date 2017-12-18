@@ -3,18 +3,11 @@ import { Row, Col } from 'antd'
 import MenuBlock from './components/MenuBlock'
 import Breadcrumb from './containers/Breadcrumb'
 import FileTable from './containers/FileTable'
-import TreeBlock from './components/TreeBlock'
+import TreeBlock from './containers/TreeBlock'
 
 class QFileBrowser extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      paths: [],
-      data: [],
-    };
-  }
-
-  componentWillMount() {
   }
 
   onPathChanged = (url) => {
@@ -33,7 +26,7 @@ class QFileBrowser extends React.Component {
           <Col span={20}><Breadcrumb /></Col>
         </Row>
         <Row>
-          <Col span={4}></Col>
+          <Col span={4}><TreeBlock /></Col>
           <Col span={20}><FileTable /></Col>
         </Row>
 
