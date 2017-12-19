@@ -29,7 +29,6 @@ class QFileBrowser extends React.Component {
           <Col span={4}><TreeBlock /></Col>
           <Col span={20}><FileTable /></Col>
         </Row>
-
       </div>
     );
   }

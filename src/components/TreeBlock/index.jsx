@@ -1,5 +1,5 @@
 /*
- * @file component Item
+ * @file FileTable.jsx component Item
 */
 import React from 'react';
 import { Icon, Tree } from 'antd';
@@ -52,8 +52,9 @@ class TreeBlock extends React.Component {
   }
 
   onSelect = (key) => {
-    if(key.length < 2)
-      this.props.onSelect(key[0]);
+    console.log(key);
+    // if(key.length < 2)
+    //   this.props.onSelect(key[0]);
   }
 
   render(){

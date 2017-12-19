@@ -47,6 +47,7 @@ npm install
 
 ## Todo List
 * React-Redux
+* CSS style
 * Add Unit Test based on mocha+chai
 * file CRUD operations
 * Ajax, RESTful, PHP server API support
