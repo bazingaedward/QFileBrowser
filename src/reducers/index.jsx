@@ -1,4 +1,4 @@
-import { CHANGE_DIRECTORY } from '../actions';
+import { CHANGE_DIRECTORY, UPDATE_DATA } from '../actions';
 
 const initialState = {
   paths: [],
@@ -33,6 +33,10 @@ function appReducer(state = initialState, action) {
         paths: action.paths
       })
       break;
+    case UPDATE_DATA:
+      return Object.assign({}, state, {
+        data: action.data
+      })
     default:
       return state;
   }

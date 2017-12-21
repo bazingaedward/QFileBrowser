@@ -5,8 +5,14 @@ import { createStore } from 'redux'
 import QFileBrowser from './App'
 import appReducer from './reducers'
 import { changeDirectory } from './actions'
+import { initialState } from './reducers'
 
-let store = createStore(appReducer);
+let store = createStore(appReducer,
+    initialState,
+    window.devToolsExtension && window.devToolsExtension()
+  );
+
+// store.dispatch(changeDirectory(['hello','world']))
 
 render (
   <Provider store={store}>

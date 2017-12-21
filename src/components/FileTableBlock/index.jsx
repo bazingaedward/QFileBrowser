@@ -23,8 +23,19 @@ class FileTableBlock extends React.Component {
       dataIndex: 'date',
       key: 'date',
     }];
+
+    const rowSelection = {
+      onChange: (selectedRowKeys, selectedRows) => {
+        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+      }
+    }
+    const options = {
+      dataSource: this.props.data,
+      columns: columns,
+      rowSelection: rowSelection
+    }
     return (
-      <Table dataSource={this.props.data} columns={columns} />
+      <Table {...options} />
     );
   }
 }

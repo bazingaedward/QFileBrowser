@@ -13,8 +13,8 @@ class MenuBlock extends React.Component {
     return (
       <div>
         <Button icon="appstore" />
-        <Button icon="left" />
-        <Button icon="right" />
+        <Button icon="left" disabled/>
+        <Button icon="right" disabled/>
       </div>
     );
   }
