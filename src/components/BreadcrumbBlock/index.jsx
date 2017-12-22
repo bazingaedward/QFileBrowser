@@ -3,6 +3,7 @@
 */
 import React from 'react';
 import { Breadcrumb, Icon } from 'antd';
+import PropTypes from 'prop-types'
 
 function BreadcrumbBlock(props) {
 
@@ -20,6 +21,10 @@ function BreadcrumbBlock(props) {
       {items}
     </Breadcrumb>
   );
+}
+
+Breadcrumb.propTypes = {
+  paths: PropTypes.array
 }
 
 export default BreadcrumbBlock;

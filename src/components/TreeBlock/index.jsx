@@ -52,7 +52,7 @@ class TreeBlock extends React.Component {
   }
 
   onSelect = (key) => {
-    console.log(key);
+    console.log(key)
     // if(key.length < 2)
     //   this.props.onSelect(key[0]);
   }

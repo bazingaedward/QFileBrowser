@@ -7,6 +7,13 @@ import { Icon, Table} from 'antd';
 class FileTableBlock extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      rowSelection: {
+        onChange: (selectedRowKeys, selectedRows) => {
+          
+        }
+      }
+    }
   }
 
   render(){
@@ -24,15 +31,12 @@ class FileTableBlock extends React.Component {
       key: 'date',
     }];
 
-    const rowSelection = {
-      onChange: (selectedRowKeys, selectedRows) => {
-        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-      }
-    }
+
     const options = {
       dataSource: this.props.data,
       columns: columns,
-      rowSelection: rowSelection
+      rowSelection: this.state.rowSelection,
+      pagination: false
     }
     return (
       <Table {...options} />
