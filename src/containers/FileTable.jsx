@@ -7,10 +7,14 @@ function mapStateToProps(state) {
   }
 }
 
-// function mapDispatchToProps(dispatch) {
-//   return {
-//
-//   }
-// }
+function mapDispatchToProps(dispatch) {
+  return {
+    rowSelection: {
+      onChange: (selectedRowKeys, selectedRows) => {
+        console.log(selectedRows)
+      }
+    }
+  }
+}
 
-export default connect(mapStateToProps)(FileTableBlock)
+export default connect(mapStateToProps, mapDispatchToProps)(FileTableBlock)

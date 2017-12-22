@@ -11,7 +11,6 @@ let store = createStore(appReducer,
     initialState,
     window.devToolsExtension && window.devToolsExtension()
   );
-
 // store.dispatch(changeDirectory(['hello','world']))
 
 render (

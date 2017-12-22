@@ -5,9 +5,9 @@ import React from 'react';
 import { Breadcrumb, Icon } from 'antd';
 import PropTypes from 'prop-types'
 
-function BreadcrumbBlock(props) {
+const BreadcrumbBlock = ({ paths }) => {
 
-  const items = props.paths.map( (path, index) => (
+  const items = paths.map( (path, index) => (
       <Breadcrumb.Item key={index+1}>
         <span>{path}</span>
       </Breadcrumb.Item>
