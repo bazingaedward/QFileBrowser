@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import FileTableBlock from '../components/FileTableBlock'
+import { subDirectory } from '../actions'
 
 function mapStateToProps(state) {
   return {
@@ -11,7 +12,8 @@ function mapDispatchToProps(dispatch) {
   return {
     rowSelection: {
       onChange: (selectedRowKeys, selectedRows) => {
-        console.log(selectedRows)
+        // console.log(selectedRows)
+        dispatch(subDirectory(selectedRows[0].name))
       }
     }
   }
