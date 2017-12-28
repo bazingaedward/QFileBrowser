@@ -5,6 +5,7 @@
   "dependencies": {
     "antd": "^2.13.10",
     "gulp": "^3.9.1",
+    "koa": "^2.4.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
